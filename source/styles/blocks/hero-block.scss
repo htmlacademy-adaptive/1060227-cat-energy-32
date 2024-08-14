@@ -1,0 +1,24 @@
+.hero-block {
+  font-family: $secondary-font;
+  color: $basic-light-color;
+}
+
+.hero-block__title-wrapper {
+  background-color: rgba(104, 183, 56, 0.85);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/background-cat-index-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 302px;
+}
+
+.hero-block__title {
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.hero-block__description {
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
