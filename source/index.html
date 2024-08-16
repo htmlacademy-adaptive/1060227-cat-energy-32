@@ -19,7 +19,7 @@
       <img class="main-header__logo-image" src="#" width="1" height="1" alt="Логотип Кэт Энерджи.">
       <img class="main-header__logo-text" src="#" width="1" height="1" alt="Надпись Кэт Энерджи.">
     </a>
-    <nav class="main-nav">
+    <nav class="main-header__nav main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
@@ -47,14 +47,16 @@
   <main class="main-container">
     <section class="hero-block">
       <div class="hero-block__wrapper">
-        <h1 class="hero-block__title title">Функциональное питание для котов</h1>
-        <p class="hero-block__description description">Занялся собой? Займись котом!</p>
+        <div class="hero-block__title-wrapper">
+          <h1 class="hero-block__title">Функциональное питание для котов</h1>
+          <p class="hero-block__description description">Занялся собой? Займись котом!</p>
+        </div>
         <picture>
           <source type="image/jpeg" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.jpg 1x, images/index-can-tablet@2x.jpg 2x" width="709" height="609">
           <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.jpg 1x, images/index-can-desktop@2x.jpg 2x" width="552" height="499">
           <img class="hero-block__image" src="images/index-can-mobile@1x.jpg" srcset="images/index-can-mobile@2x.jpg 2x" width="280" height="270" alt="Банка корма CAT ENERGY со вкусом курицы.">
         </picture>
-        <a class="hero-block__link button" href="#">Подобрать программу</a>
+        <a class="hero-block__link button button---primary" href="#">Подобрать программу</a>
       </div>
     </section>
 

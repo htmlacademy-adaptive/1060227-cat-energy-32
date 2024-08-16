@@ -1,0 +1,26 @@
+.diet-programs__item {
+  background-color: $bg-primary-grey;
+}
+
+.diet-programs__list {
+  list-style: none;
+}
+
+.diet-programs__title {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  color: $dark-color;
+  text-transform: uppercase;
+}
+
+.diet-programs__link {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $dark-color;
+}

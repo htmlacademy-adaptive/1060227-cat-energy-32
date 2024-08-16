@@ -1,0 +1,28 @@
+.product-card {
+  list-style: none;
+}
+
+.product-card__link-title {
+  text-decoration: none;
+}
+
+.product-card__title,
+.show-all-cards__title {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $dark-secondary-color;
+  text-transform: uppercase;
+}
+
+.product-card__list,
+.show-all-cards__description {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.show-all-cards__title {
+  color: $dark-primary-color;
+}
