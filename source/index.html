@@ -15,9 +15,17 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="#" width="1" height="1" alt="Логотип Кэт Энерджи.">
-      <img class="main-header__logo-text" src="#" width="1" height="1" alt="Надпись Кэт Энерджи.">
+    <a class="main-header__logo logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+        <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи.">
+      </picture>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/logo-text.svg" width="118" height="21" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/logo-text.svg" width="101" height="18" type="image/svg+xml">
+        <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Надпись Кэт Энерджи.">
+      </picture>
     </a>
     <nav class="main-header__nav main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
@@ -151,8 +159,8 @@
 
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <a class="main-footer__logo" href="index.html">
-          <img class="main-footer__logo-text" src="#" width="1" height="1" alt="Надпись Кэт Энерджи.">
+        <a class="main-footer__logo logo" href="index.html">
+          <img class="main-footer__logo-text" src="images/logo-text.svg" width="128" height="24" alt="Надпись Кэт Энерджи.">
         </a>
         <div class="main-footer__social social">
           <ul class="social__list">
@@ -170,7 +178,7 @@
             <a class="main-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="main-footer__academy-text">HTML Academy</span>
               <span class="visually-hidden">Сайт HTML Academy</span>
-              <svg class="main-footer__academy-icon" width="27" height="34"></svg>
+              <span class="main-footer__academy-icon"></span>
             </a>
           </div>
         </div>
