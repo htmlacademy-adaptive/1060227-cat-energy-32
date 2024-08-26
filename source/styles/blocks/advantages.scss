@@ -1,5 +1,19 @@
 .advantages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 230px 246px;
+    gap: 37px 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 230px 246px 248px 250px;
+    gap: 94px;
+  }
 }
 
 .advantages__description {

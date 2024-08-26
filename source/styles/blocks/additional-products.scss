@@ -1,17 +1,9 @@
-.product-card-extra {
-  list-style: none;
-}
-
-.product-card-extra__title {
-  font-family: $secondary-font;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 16px;
-  color: $dark-secondary-color;
-}
-
-.product-card-extra__list {
-  line-height: 14px;
+.additional-products__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 896px 245px;
+    gap: 80px;
+  }
 }
 
 .additional-products__offer {
@@ -19,6 +11,14 @@
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/cat-catalog-mobile@1x.jpg");
   background-repeat: no-repeat;
   min-height: 290px;
+
+  @media (min-height: $tablet-width) {
+    min-height: 200px;
+  }
+
+  @media (min-height: $desktop-width) {
+    min-height: 288px;
+  }
 }
 
 .additional-products__offer-description {

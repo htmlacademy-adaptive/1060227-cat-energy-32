@@ -1,4 +1,10 @@
 .main-header {
+  display: flex;
   color: $dark-color;
   background-color: $bg-basic-light;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
+
