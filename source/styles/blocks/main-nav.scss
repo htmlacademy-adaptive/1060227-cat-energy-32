@@ -1,13 +1,11 @@
 .main-nav__list {
-  display: flex;
-  // flex-direction: column;
   text-align: center;
   list-style: none;
   margin: 0;
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    // flex-direction: row;
+    display: flex;
     width: 436px;
     justify-content: space-between;
   }

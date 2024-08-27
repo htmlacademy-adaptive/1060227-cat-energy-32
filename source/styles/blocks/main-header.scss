@@ -1,9 +1,12 @@
 .main-header {
   display: flex;
+  flex-direction: column;
   color: $dark-color;
   background-color: $bg-basic-light;
+  min-height: 65px;
 
   @media (min-width: $tablet-width) {
+    flex-direction: row;
     justify-content: space-between;
   }
 }
