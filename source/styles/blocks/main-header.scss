@@ -1,6 +1,7 @@
 .main-header {
   display: flex;
   flex-direction: column;
+  //justify-content: space-between;
   color: $dark-color;
   background-color: $bg-basic-light;
   min-height: 65px;
