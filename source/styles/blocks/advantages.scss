@@ -18,13 +18,21 @@
   }
 }
 
+.advantages__item {
+  width: 280px;
+  min-height: 60px;
+}
+
 .advantages__description {
   position: relative;
+  padding-left: 80px;
+  margin: 0;
 }
 
 .advantages__description::before {
   content: "";
-  // position: absolute;
+  position: absolute;
+  right: 220px;
   display: block;
   width: 60px;
   height: 60px;

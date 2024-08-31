@@ -1,6 +1,10 @@
 .container {
+  width: 320px;
+  box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     padding-left: 30px;
