@@ -1,8 +1,17 @@
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
 .contacts__description {
+  width: 140px;
   font-family: $secondary-font;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  margin: 0;
   text-transform: uppercase;
   color: $dark-primary-color;
 }

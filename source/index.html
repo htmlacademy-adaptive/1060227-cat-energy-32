@@ -27,7 +27,7 @@
         <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Надпись Кэт Энерджи.">
       </picture>
     </a>
-    <nav class="main-header__nav main-nav">
+    <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
@@ -53,7 +53,7 @@
   </header>
 
   <main class="main-container">
-    <section class="hero-block">
+    <section class="hero-block container">
       <div class="hero-block__wrapper">
         <div class="hero-block__title-wrapper">
           <h1 class="hero-block__title">Функциональное питание для котов</h1>
@@ -62,13 +62,13 @@
         <picture>
           <source type="image/jpeg" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.jpg 1x, images/index-can-tablet@2x.jpg 2x" width="709" height="609">
           <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.jpg 1x, images/index-can-desktop@2x.jpg 2x" width="552" height="499">
-          <img class="hero-block__image" src="images/index-can-mobile@1x.jpg" srcset="images/index-can-mobile@2x.jpg 2x" width="280" height="270" alt="Банка корма CAT ENERGY со вкусом курицы.">
+          <img class="hero-block__image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Банка корма CAT ENERGY со вкусом курицы.">
         </picture>
-        <a class="hero-block__link button button---primary" href="#">Подобрать программу</a>
+        <a class="hero-block__link button button--primary" href="#">Подобрать программу</a>
       </div>
     </section>
 
-    <section class="diet-programs">
+    <section class="diet-programs container">
       <h2 class="visually-hidden">Программы диет для котов</h2>
       <div class="diet-programs__wrapper">
         <ul class="diet-programs__list">
@@ -90,7 +90,7 @@
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages container">
       <div class="advantages__wrapper">
         <h2 class="advantages__title title">Как это работает</h2>
         <ul class="advantages__list">
@@ -111,7 +111,7 @@
     </section>
 
     <section class="example">
-      <div class="example__wrapper">
+      <div class="example__wrapper container">
         <h2 class="example__title title">Живой пример</h2>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <ul class="example__list">
@@ -147,13 +147,13 @@
     </section>
 
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper container">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__description">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
+        <p class="contacts__description">Приглашаем <br>к сотрудничеству дилеров!</p>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        <div class="contacts__map-container map">
-          <img class="map__img" width="320" height="362" src="#" alt="Магазин Кэт Энерджи на карте">
-        </div>
+      </div>
+      <div class="contacts__map-container map">
+        <img class="map__img" width="320" height="362" src="#" alt="Магазин Кэт Энерджи на карте">
       </div>
     </section>
 
@@ -174,17 +174,19 @@
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Телеграм</span></a>
             </li>
           </ul>
-          <div class="main-footer__academy-logo">
-            <a class="main-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="main-footer__academy-text">HTML Academy</span>
-              <span class="visually-hidden">Сайт HTML Academy</span>
-              <span class="main-footer__academy-icon"></span>
-            </a>
-          </div>
+        </div>
+        <div class="main-footer__academy-logo">
+          <a class="main-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="main-footer__academy-text">HTML Academy</span>
+            <span class="visually-hidden">Сайт HTML Academy</span>
+            <span class="main-footer__academy-icon"></span>
+          </a>
         </div>
       </div>
     </footer>
   </main>
+
+  <script src="scripts/menu.js"></script>
 </body>
 
 </html>

@@ -1,18 +1,24 @@
 .hero-block {
+  position: relative;
   font-family: $secondary-font;
   color: $basic-light-color;
 }
 
 .hero-block__title-wrapper {
-  background-color: rgba(104, 183, 56, 0.85);
+  background-color: #68b738;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/background-cat-index-mobile@1x.jpg");
   background-repeat: no-repeat;
   min-height: 302px;
+  background-size: contain;
+  background-position: center;
 }
 
 .hero-block__title {
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
+  margin-bottom: 25px;
+  padding-top: 27px;
   text-align: center;
 }
 
@@ -21,3 +27,15 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+.hero-block__image {
+  display: block;
+  margin: 0 auto;
+  margin-top: -132px;
+}
+
+// .hero-block__link {
+//   padding: 10px 63.5px;
+//   margin: 0 auto;
+//   // margin-top: 3px;
+// }
