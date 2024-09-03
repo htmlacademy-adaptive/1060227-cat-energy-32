@@ -7,11 +7,15 @@
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
+    width: 768px;
     padding-left: 30px;
     padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1440px;
     padding-left: 110px;
     padding-right: 110px;
   }

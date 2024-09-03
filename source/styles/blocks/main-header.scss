@@ -1,13 +1,38 @@
 .main-header {
   display: flex;
-  flex-direction: column;
-  //justify-content: space-between;
+  //flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  //width: 190px;
   color: $dark-color;
   background-color: $bg-basic-light;
   min-height: 65px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+    //flex-direction: row;
     justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    min-height: 50px;
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.main-header__logo {
+  display: flex;
+  gap: 56px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    gap: 13px;
+    padding-top: 25px;
   }
 }
