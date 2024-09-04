@@ -61,8 +61,8 @@
           <a class="hero-block__link button button--primary" href="#">Подобрать программу</a>
         </div>
         <picture>
-          <source type="image/jpeg" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.jpg 1x, images/index-can-tablet@2x.jpg 2x" width="709" height="609">
           <source type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x" width="552" height="499">
+          <source type="image/jpeg" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.jpg 1x, images/index-can-tablet@2x.jpg 2x" width="709" height="609">
           <img class="hero-block__image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Банка корма CAT ENERGY со вкусом курицы.">
         </picture>
       </div>
@@ -133,7 +133,7 @@
           </div>
         </div>
         <div class="example__slider slider">
-          <picture>
+          <!-- <picture>
             <source type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet-desktop@1x.png 1x, images/cat-before-tablet-desktop@2x.png 2x" width="560" height="512">
             <img class="example__slider-image example__slider-image--before" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Фото кота до похудения">
           </picture>
@@ -148,7 +148,29 @@
           <picture>
             <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet-desktop@1x.png 1x, images/cat-after-tablet-desktop@2x.png 2x" width="560" height="512">
             <img class="example__slider-image example__slider-image--after" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Фото кота после похудения">
-          </picture>
+          </picture> -->
+          <div class="slider__container">
+            <ul class="slider__images">
+              <li class="slider__image slider__image--before">
+                <picture>
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet-desktop@1x.png 1x, images/cat-before-tablet-desktop@2x.png 2x" width="560" height="512">
+                  <img class="slider__before" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Фото кота до похудения">
+                </picture>
+              </li>
+              <li class="slider__image slider__image--after">
+                <picture>
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet-desktop@1x.png 1x, images/cat-after-tablet-desktop@2x.png 2x" width="560" height="512">
+                  <img class="slider__after" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Фото кота после похудения">
+                </picture>
+              </li>
+            </ul>
+
+            <div class="slider__input">
+              <button class="slider__button" type="button">
+                <span class="visually-hidden">Посмотреть изменения</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -196,7 +218,8 @@
     </footer>
   </main>
 
-  <script src="scripts/menu.js"></script>
+  <script src="scripts/menu.js" defer></script>
+  <script src="scripts/slider.js" defer></script>
 </body>
 
 </html>

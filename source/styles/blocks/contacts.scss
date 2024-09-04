@@ -6,8 +6,7 @@
   display: grid;
   grid-template-columns: 138px 140px;
   gap: 15px;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 163px 157px;
