@@ -4,9 +4,12 @@
   font-size: 36px;
   line-height: 36px;
   color: $dark-color;
+  margin-bottom: 41px;
 }
 
 .catalog__list {
+  margin: 0;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 324px 324px;

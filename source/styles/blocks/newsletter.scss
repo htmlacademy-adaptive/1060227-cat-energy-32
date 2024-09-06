@@ -1,16 +1,42 @@
+.newsletter {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter__title {
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+
 .newsletter__description {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 24px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
-.field {
+.newsletter__field {
+  width: 100%;
   font-family: $secondary-font;
   font-size: 20px;
   line-height: 30px;
   text-transform: uppercase;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid $special-grey-color;
+  text-align: center;
 }
 
-.field::placeholder {
+.newsletter__field::placeholder {
   color: $basic-dark-grey-color;
+}
+
+.newsletter__button {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
 }
