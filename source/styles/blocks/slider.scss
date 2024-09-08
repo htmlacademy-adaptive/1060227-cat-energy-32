@@ -1,34 +1,35 @@
-.slider {
-  position: relative;
+// .slider {
+//   position: relative;
 
-  @media (min-width: $tablet-width) {
-    top: -13px;
-    width: 100%;
-    height: 462px;
-    background-color: $bg-secondary-grey;
+//   @media (min-width: $tablet-width) {
+//     top: 230px;
+//     width: 100%;
+//     height: 462px;
+//     background-color: $bg-secondary-grey;
 
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      width: 100vw;
-      height: 100%;
-      background-color: $bg-secondary-grey;
-      box-shadow: -200px 0 0 $bg-secondary-grey;
-    }
-  }
+//     &::before {
+//       content: "";
+//       position: absolute;
+//       left: 0;
+//       width: 100%;
+//       height: 100%;
+//       background-color: $bg-secondary-grey;
+//       box-shadow: -200px 0 0 $bg-secondary-grey;
+//     }
+//   }
 
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 0;
-    padding: 0;
-    background-color: transparent;
+//   @media (min-width: $desktop-width) {
+//     position: absolute;
+//     top: 30px;
+//     left: -110px;
+//     padding: 0;
+//     background-color: transparent;
 
-    &::before {
-      display: none;
-    }
-  }
-}
+//     &::before {
+//       display: none;
+//     }
+//   }
+// }
 
 .slider__container {
   position: relative;
@@ -44,7 +45,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 1450px;
+    top: -5px;
     left: 770px;
     margin: 0;
   }

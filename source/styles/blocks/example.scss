@@ -13,6 +13,8 @@
 }
 
 .example__wrapper {
+  position: relative;
+
   @media (min-width: $desktop-width) {
     display: flex;
   }
@@ -152,8 +154,8 @@
 .example__slider {
   margin-top: 230px;
 
-  // @media (min-width: $desktop-width) {
-  //   position: absolute;
-  //   top: 50px;
-  // }
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 50px;
+  }
 }

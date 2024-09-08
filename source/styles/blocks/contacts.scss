@@ -11,9 +11,14 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 163px 157px;
+    display: grid;
+    // display: flex;
     justify-content: space-between;
+    grid-template-columns: 172px 175px;
+    // //gap: 307px;
+    width: 628px;
     padding: 60px 70px;
+    //background-color: #ffffff;
     // padding-top: 60px;
     // padding-bottom: 60px;
   }
@@ -44,6 +49,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    min-width: 172px;
   }
 }
 

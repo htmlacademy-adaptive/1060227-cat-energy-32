@@ -1,11 +1,22 @@
 .additional-products__title {
   margin-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 80px;
+  }
 }
 
 .additional-products__wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 896px 245px;
+    grid-template-columns: 894px 245px;
     gap: 80px;
   }
 }
@@ -21,12 +32,19 @@
   background-repeat: no-repeat;
   min-height: 290px;
 
-  @media (min-height: $tablet-width) {
+  @media (min-width: $tablet-width) {
     min-height: 200px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/cat-catalog-tablet@1x.jpg");
+    background-size: cover;
+    background-position: 50%;
   }
 
-  @media (min-height: $desktop-width) {
+  @media (min-width: $desktop-width) {
     min-height: 288px;
+    margin-top: 0;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/cat-catalog-desktop@1x.jpg");
+    background-size: cover;
+    background-position: 50%;
   }
 }
 

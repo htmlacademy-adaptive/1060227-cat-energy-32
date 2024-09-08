@@ -17,9 +17,6 @@ ymaps.ready(function () {
           iconImageHref: '../images/map-pin@2x.png',
           // Размеры метки.
           iconImageSize: [90, 80]
-          // Смещение левого верхнего угла иконки относительно
-          // её "ножки" (точки привязки).
-          // iconImageOffset: [-45, -75]
       });
 
   myMap.geoObjects
