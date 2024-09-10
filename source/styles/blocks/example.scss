@@ -3,20 +3,26 @@
   background-color: $bg-secondary-grey;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient($bg-basic-light 55%, $bg-secondary-grey 55%);
+    background-image: linear-gradient($bg-basic-light 618px, $bg-secondary-grey 618px);
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 598px;
     // position: relative;
-    background-image: linear-gradient($bg-basic-light 15%, $bg-secondary-grey 15%);
+    background-image: linear-gradient($bg-basic-light 156px, $bg-secondary-grey 156px);
   }
 }
 
 .example__wrapper {
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 177px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
+    padding-bottom: 0;
   }
 }
 
@@ -31,15 +37,36 @@
   margin: 0;
   margin-bottom: 40px;
 
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-top: 44px;
+    margin-bottom: 60px;
+  }
+
   @media (min-width: $desktop-width) {
+    padding-top: 20px;
     margin-bottom: 146px;
   }
+}
+
+.example__title::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  width: 100%;
+  border: 1px solid $light-grey-color;
 }
 
 .example__description {
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 433px;
+    margin-bottom: 70px;
   }
 }
 
@@ -80,6 +107,12 @@
   height: 56px;
   border: 1px solid $special-grey-color;
   border-radius: 3px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 71px;
+  }
 }
 
 .example__item-title {
@@ -91,6 +124,12 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $dark-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    margin-top: 14px;
+  }
 }
 
 .example__item-name {
@@ -103,12 +142,19 @@
   background-color: $bg-secondary-grey;
   width: min-content;
   //max-width: calc(100% - 20px);
-  margin-top: 0;
+  margin-top: -2px;
+  // margin-bottom: 34px;
   padding-left: 16px;
   padding-right: 16px;
 
   @media (min-width: $tablet-width) {
     background-color: $bg-basic-light;
+    font-size: 14px;
+    line-height: 14px;
+    width: auto;
+    margin-top: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
   }
 
   @media (min-width: $desktop-width) {
@@ -119,7 +165,7 @@
 .example__info-cost {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 34px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -128,13 +174,15 @@
     gap: 9px;
     text-align: right;
     width: 250px;
+    margin-top: 11px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 174px 90px;
-    gap: 63px;
+    grid-template-columns: 174px 100px;
+    gap: 53px;
     margin-left: 40px;
+    margin-top: 60px;
   }
 }
 
@@ -151,8 +199,16 @@
   }
 }
 
+.example__info-cost-name {
+  margin-left: -4px;
+}
+
+.example__info-cost-price {
+  margin-left: 5px;
+}
+
 .example__slider {
-  margin-top: 230px;
+  margin-top: 20px;
 
   @media (min-width: $desktop-width) {
     position: absolute;

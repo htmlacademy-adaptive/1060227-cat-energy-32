@@ -6,12 +6,18 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  padding-top: 37px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 16px;
+    padding-left: 36px;
+  }
 }
 
 .social__list::after {
   content: "";
   position: absolute;
-  top: 44px;
+  top: 77px;
   left: -76px;
   width: 280px;
   height: 1px;

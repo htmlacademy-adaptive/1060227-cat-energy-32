@@ -32,8 +32,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 230px 246px 248px 250px;
-    gap: 94px;
+    //grid-template-columns: 230px 246px 248px 250px;
+    grid-template-columns: 248px 250px 250px 248px;
+    //gap: 94px;
+    gap: 76px;
   }
 }
 
@@ -90,6 +92,8 @@
   @media (min-width: $tablet-width) {
     top: 40px;
     left: 0;
+    width: 80px;
+    height: 80px;
   }
 }
 

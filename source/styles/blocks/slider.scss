@@ -38,15 +38,15 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    top: -151px;
+    top: 75px;
     width: 560px;
     height: 512px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: -5px;
-    left: 770px;
+    top: -50px;
+    left: 660px;
     margin: 0;
   }
 }
