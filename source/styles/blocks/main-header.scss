@@ -30,18 +30,21 @@
 .main-header__wrapper {
   display: flex;
   gap: 65px;
-  //padding-top: 14px;
+  width: 279px;
+  padding-top: 14px;
   padding-bottom: 11px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     gap: 94px;
     width: 704px;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
     gap: 543px;
     width: 1220px;
+    padding-top: 0;
   }
 }
 

@@ -1,5 +1,9 @@
 .diet-programs__wrapper {
-  padding-top: 135px;
+  padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 133px;
@@ -142,7 +146,7 @@
     height: 112px;
     top: 135px;
     left: 414px;
-    //background-image: url("../../icons/stack.svg#cat-pro-tablet");
+    background-image: url("../../icons/stack.svg#cat-pro-tablet");
     background-size: 269px 112px;
   }
 

@@ -16,6 +16,10 @@
     padding-top: 38px;
     //margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 48px;
+  }
 }
 
 .main-footer__logo {
@@ -26,6 +30,10 @@
     // margin-right: 160px;
     padding-top: 19px;
   }
+
+  // @media (min-width: $desktop-width) {
+  //   padding-top: 32px;
+  // }
 }
 
 .main-footer__logo::after {

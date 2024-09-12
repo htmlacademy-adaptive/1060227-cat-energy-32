@@ -2,6 +2,16 @@
   position: relative;
 }
 
+.contacts__wrapper-inside {
+  @media (min-width: $desktop-width) {
+    z-index: 1;
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+  }
+}
+
 .contacts__wrapper {
   display: grid;
   grid-template-columns: 140px 140px;
@@ -26,13 +36,14 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: 0;
     width: 565px;
     //height: 199px;
     padding-left: 80px;
     padding-right: 78px;
     background-color: $bg-basic-light;
     z-index: 2;
+    box-sizing: border-box;
   }
 }
 
@@ -63,6 +74,12 @@
     font-size: 16px;
     gap: 20px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    gap: 19px;
+    padding-left: 18px;
   }
 }
 

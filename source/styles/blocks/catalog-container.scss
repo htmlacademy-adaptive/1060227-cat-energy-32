@@ -5,6 +5,14 @@
   line-height: 36px;
   color: $dark-color;
   margin-bottom: 41px;
+  margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 50px;
+    margin-bottom: 90px;
+  }
 }
 
 .catalog__list {

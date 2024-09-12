@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 598px;
+    min-height: 620px;
     // position: relative;
     background-image: linear-gradient($bg-basic-light 156px, $bg-secondary-grey 156px);
   }
@@ -49,13 +49,13 @@
   }
 }
 
-.example__title::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  width: 100%;
-  border: 1px solid $light-grey-color;
-}
+// .example__title::before {
+//   content: "";
+//   position: absolute;
+//   top: -3px;
+//   width: 100%;
+//   border: 1px solid $light-grey-color;
+// }
 
 .example__description {
   @media (min-width: $tablet-width) {
