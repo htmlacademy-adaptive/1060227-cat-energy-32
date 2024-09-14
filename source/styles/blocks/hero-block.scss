@@ -18,6 +18,12 @@
   }
 }
 
+// .hero-block__wrapper {
+//   @media (min-width: $desktop-width) {
+//     background-color: #00;
+//   }
+// }
+
 .hero-block__title-wrapper {
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/background-cat-index-mobile@1x.jpg"), linear-gradient(90deg, #545359, #414046);
   background-repeat: no-repeat;
@@ -31,9 +37,9 @@
     padding-left: 90px;
   }
 
-  // @media (min-width: $desktop-width) {
-  //   padding-left: 190px;
-  // }
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
 }
 
 .hero-block__title {
@@ -55,7 +61,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 87px;
+    padding-top: 95px;
   }
 }
 
@@ -94,8 +100,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -365px;
-    margin-left: 446px;
+    position: absolute;
+    margin-top: -149px;
+    margin-left: 448px;
   }
 }
 

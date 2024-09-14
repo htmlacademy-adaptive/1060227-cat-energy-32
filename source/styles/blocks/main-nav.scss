@@ -1,7 +1,6 @@
-// .main-nav {
-//   //position: relative;
-//   //width: 24px;
-// }
+.main-nav {
+  background-color: none;
+}
 
 .main-nav__toggle {
   position: relative;
@@ -97,6 +96,8 @@
   @media (min-width: $desktop-width) {
     width: 475px;
     padding-top: 75px;
+    gap: 20px;
+    background-color: transparent;
   }
 }
 
@@ -114,11 +115,12 @@
   background-color: #68b738;
 
   @media (min-width: $tablet-width) {
-    top: 32px;
+    top: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    // background-color: $bg-basic-light;
+    top: 31px;
+    background-color: $basic-light-color;
   }
 }
 
@@ -145,6 +147,6 @@
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
-    // color: $basic-light-color;
+    color: $basic-light-color;
   }
 }

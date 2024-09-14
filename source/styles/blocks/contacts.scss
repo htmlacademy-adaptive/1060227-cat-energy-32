@@ -5,7 +5,7 @@
 .contacts__wrapper-inside {
   @media (min-width: $desktop-width) {
     z-index: 1;
-    width: 1220px;
+    // width: 1220px;
     margin: 0 auto;
     padding: 0;
     position: relative;
@@ -41,6 +41,7 @@
     //height: 199px;
     padding-left: 80px;
     padding-right: 78px;
+    margin-left: 110px;
     background-color: $bg-basic-light;
     z-index: 2;
     box-sizing: border-box;

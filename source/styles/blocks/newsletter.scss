@@ -36,6 +36,18 @@
       left: -40px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    padding-left: 0;
+    margin-top: 96px;
+    margin-bottom: 72px;
+
+    &::before {
+      top: 18px;
+    }
+  }
 }
 
 .newsletter__description {
@@ -65,6 +77,10 @@
     gap: 0;
     margin-bottom: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 104px;
+  }
 }
 
 .newsletter__field {
@@ -83,6 +99,10 @@
   @media (min-width: $tablet-width) {
     width: 376px;
     padding: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
   }
 }
 

@@ -13,6 +13,10 @@
     margin-top: 50px;
     margin-bottom: 90px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 59px;
+  }
 }
 
 .catalog__list {

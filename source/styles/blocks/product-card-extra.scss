@@ -77,7 +77,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 6px;
     margin-bottom: 0;
+    justify-content: space-between;
   }
 }
 
@@ -91,6 +93,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 3/4;
     //grid-row: -1/2;
+    margin-top: 0;
   }
 }
 
@@ -100,6 +103,10 @@
     line-height: 20px;
     width: 135px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
@@ -116,6 +123,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 40px;
+    margin-right: 38px;
+    width: 44px;
+    text-align: left;
   }
 }
