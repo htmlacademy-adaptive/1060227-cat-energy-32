@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient($bg-basic-light 618px, $bg-secondary-grey 618px);
+    border-top: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,11 +51,13 @@
 }
 
 // .example__title::before {
-//   content: "";
-//   position: absolute;
-//   top: -3px;
-//   width: 100%;
-//   border: 1px solid $light-grey-color;
+//   @media (min-width: $tablet-width) {
+//     content: "";
+//     position: absolute;
+//     top: -3px;
+//     width: 100vw;
+//     border: 1px solid $light-grey-color;
+//   }
 // }
 
 .example__description {
