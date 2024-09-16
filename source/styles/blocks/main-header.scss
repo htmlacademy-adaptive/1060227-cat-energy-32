@@ -1,52 +1,47 @@
 .main-header {
-  //display: flex;
-  //flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  //width: 190px;
+  min-height: 65px;
   color: $dark-color;
   background-color: $bg-basic-light;
-  min-height: 65px;
 
   @media (min-width: $tablet-width) {
-    //flex-direction: row;
-    justify-content: space-between;
+    min-height: 50px;
     padding-left: 30px;
     padding-right: 30px;
-    min-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
     z-index: 1;
+  }
+}
 
+.main-header--index {
+  @media (min-width: $desktop-width) {
     &::before {
       content: "";
       position: absolute;
-      width: 100vw;
-      height: 793px;
+      z-index: -1;
+      width: 50%;
+      height: 748px;
       top: -55px;
       left: 50%;
       right: 0;
       background-color: rgba(104, 183, 56, 0.85);
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/background-cat-index-desktop@1x.jpg"), linear-gradient(90deg, #414045, #434248);
-      // background-position: 100% 0, 100% 0;
-      // background-position: 0 0;
+      background-position: 100% 0, bottom left 0, 100% 0;
       background-repeat: no-repeat;
-      background-size: contain;
-      z-index: -1;
+      background-size: cover, 1041px 694px, cover;
     }
   }
 }
-
 
 .main-header__wrapper {
   display: flex;
   gap: 65px;
   width: 279px;
-  padding-top: 14px;
-  padding-bottom: 11px;
   margin: 0 auto;
+  padding-top: 14px;
+  padding-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     gap: 94px;
@@ -64,8 +59,8 @@
 .main-header__logo {
   display: flex;
   gap: 56px;
-  padding-top: 1px;
   align-items: center;
+  padding-top: 1px;
 
   @media (min-width: $tablet-width) {
     gap: 11px;

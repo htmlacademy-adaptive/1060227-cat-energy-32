@@ -1,68 +1,62 @@
-.additional-products__title {
+.additional-products {
   position: relative;
-  max-width: fit-content;
-  background-color: $bg-basic-light;
-  // padding-right: 40px;
-  margin-top: 27px;
-  margin-bottom: 49px;
+  padding: 0;
 
-  &::before {
-    content: "";
-    background-color: #68b738;
-    width: 100vw;
-    height: 2px;
-    display: block;
-    position: absolute;
-    top: 18px;
-    right: calc(100% + 40px);
-  }
 
   &::after {
     content: "";
-    background-color: #68b738;
-    width: 100vw;
-    height: 2px;
-    display: block;
     position: absolute;
-    top: 18px;
-    left: calc(100% + 40px);
-  }
+    top: 8px;
+    width: 100%;
+    height: 2px;
+    background-color: $basic-green;
 
-  @media (min-width: $tablet-width) {
-    font-size: 32px;
-    line-height: 32px;
-    padding-left: 40px;
-    margin-top: 72px;
-    margin-bottom: 80px;
+    @media (min-width: $tablet-width) {
+      top: 13px;
+    }
 
-    // &::before {
-    //   left: -40px;
-    //   // content: "";
-    //   // position: absolute;
-    //   // left: 0;
-    //   // width: 100%;
-    //   // height: 2px;
-    //   // background-color: $basic-green;
-    //   // border: 1px solid $basic-green;
-    // }
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 40px;
-    line-height: 40px;
-    padding-left: 0;
-    margin-top: 69px;
-    margin-bottom: 80px;
-
-
-    // &::before {
-    //   top: 18px;
-    // }
+    @media (min-width: $desktop-width) {
+      top: 17px;
+    }
   }
 }
 
+.additional-products__title {
+  position: relative;
+  z-index: 1;
+  max-width: fit-content;
+  margin-top: 27px;
+  margin-bottom: 47px;
+  padding-right: 40px;
+  background-color: $bg-basic-light;
 
-.additional-products__wrapper {
+  &::before {
+    content: " ";
+    position: absolute;
+    left: -40px;
+    width: 40px;
+    height: 40px;
+    background-color: $bg-basic-light;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 72px;
+    margin-bottom: 80px;
+    padding-left: 40px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 69px;
+    margin-bottom: 80px;
+    padding-left: 0;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.additional-products__list-wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 894px 245px;
@@ -75,16 +69,16 @@
 }
 
 .additional-products__offer {
-  margin-top: 54px;
-  background-color: rgba(104, 183, 56, 0.85);
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/cat-catalog-mobile@1x.jpg");
-  background-repeat: no-repeat;
   min-height: 290px;
+  margin-top: 54px;
+  background-color: $basic-green-opacity;
+  background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/cat-catalog-mobile@1x.jpg");
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     min-height: 200px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/cat-catalog-tablet@1x.jpg");
     margin-top: 69px;
+    background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/cat-catalog-tablet@1x.jpg");
     background-size: cover;
     background-position: 50%;
   }
@@ -92,7 +86,7 @@
   @media (min-width: $desktop-width) {
     min-height: 288px;
     margin-top: 0;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/cat-catalog-desktop@1x.jpg");
+    background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/cat-catalog-desktop@1x.jpg");
     background-size: cover;
     background-position: 50%;
   }
@@ -101,18 +95,18 @@
 .additional-products__offer-description {
   position: relative;
   width: 161px;
+  margin: 0 auto;
+  padding-top: 189px;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  padding-top: 187px;
-  margin: 0 auto;
   text-align: center;
   color: $basic-light-color;
 
   @media (min-width: $tablet-width) {
-    text-align: left;
-    padding-top: 71px;
     margin-left: 421px;
+    padding-top: 71px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
@@ -126,7 +120,7 @@
   content: "";
   position: absolute;
   display: block;
-  top: 58px;
+  top: 60px;
   left: 41px;
   width: 78px;
   height: 80px;

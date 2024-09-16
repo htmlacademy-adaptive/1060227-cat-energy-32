@@ -3,19 +3,17 @@
 @import "./common/mixins.scss";
 @import "./common/fonts.scss";
 @import "./common/global.scss";
-@import "./common/button.scss";
 @import "./common/visually-hidden.scss";
 @import "./common/container.scss";
 
 
 /* BLOCKS */
-@import "./blocks/page.scss";
+@import "./blocks/button.scss";
 @import "./blocks/title.scss";
 @import "./blocks/title-catalog.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/main-nav.scss";
-@import "./blocks/main-container.scss";
 @import "./blocks/hero-block.scss";
 @import "./blocks/diet-programs.scss";
 @import "./blocks/advantages.scss";

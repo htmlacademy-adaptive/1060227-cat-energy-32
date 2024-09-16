@@ -56,8 +56,8 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font-size: 36px;
     padding-left: 0;
+    font-size: 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,10 +71,10 @@
 
   @media (min-width: $tablet-width) {
     width: 340px;
+    margin-top: 24px;
+    margin-bottom: 56px;
     font-size: 16px;
     line-height: 24px;
-    margin-top: 23px;
-    margin-bottom: 56px;
   }
 
   @media (min-width: $desktop-width) {
@@ -95,7 +95,6 @@
   background-color: $additional-grey-color;
 
   @media (min-width: $tablet-width) {
-    //display: none;
     content: none;
   }
 }
@@ -103,28 +102,28 @@
 .diet-programs__item--slim .diet-programs__title::after {
   content: "";
   position: absolute;
+  top: 19px;
+  left: 20px;
   width: 50px;
   height: 53px;
-  left: 20px;
-  top: 19px;
   background-image: url("../../icons/stack.svg#cat-slim");
   background-size: 50px 53px;
   background-position: center;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
+    top: 81px;
+    left: 475px;
     width: 140px;
     height: 194px;
-    left: 475px;
-    top: 81px;
     background-size: 140px 194px;
   }
 
   @media (min-width: $desktop-width) {
+    top: 41px;
+    left: 67px;
     width: 70px;
     height: 97px;
-    left: 67px;
-    top: 41px;
     background-size: 70px 97px;
   }
 }
@@ -132,29 +131,29 @@
 .diet-programs__item--pro .diet-programs__title::after {
   content: "";
   position: absolute;
+  top: 25px;
+  left: 13px;
   width: 67px;
   height: 50px;
-  left: 13px;
-  top: 25px;
   background-image: url("../../icons/stack.svg#cat-pro");
   background-size: 67px 50px;
   background-position: center;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    width: 269px;
-    height: 112px;
     top: 135px;
     left: 414px;
+    width: 269px;
+    height: 112px;
     background-image: url("../../icons/stack.svg#cat-pro-tablet");
     background-size: 269px 112px;
   }
 
   @media (min-width: $desktop-width) {
+    top: 67px;
+    left: 33px;
     width: 134px;
     height: 56px;
-    left: 33px;
-    top: 67px;
     background-size: 134px 56px;
   }
 }
@@ -162,11 +161,11 @@
 .diet-programs__title::before {
   content: "";
   position: absolute;
+  top: 24px;
+  right: 210px;
   display: block;
   width: 50px;
   height: 50px;
-  top: 24px;
-  right: 210px;
   border-radius: 50%;
   background-color: $basic-green;
 
@@ -187,6 +186,7 @@
 
 .diet-programs__link {
   position: relative;
+  display: inline-block;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
@@ -195,23 +195,41 @@
   text-decoration: none;
   color: $dark-color;
 
+  &:active {
+    opacity: 0.4;
+  }
+
+  &:focus {
+    opacity: 0.4;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: -48px;
+    display: block;
+    width: 32px;
+    height: 10px;
+    background-image: url("../../icons/stack.svg#arrow");
+    background-color: transparent;
+
+    @media (min-width: $tablet-width) {
+      top: 7px;
+      right: -58px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 5px;
+    }
+  }
+
+  &:hover::after {
+    background-image: url("../../icons/stack.svg#arrow-hover");
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
   }
-}
-
-.diet-programs__link::after {
-  content: "";
-  position: absolute;
-  right: -48px;
-  top: 7px;
-  display: block;
-  width: 32px;
-  height: 10px;
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-image: url("../../icons/stack.svg#arrow");
-  mask-size: 32px 10px;
-  background-color: $dark-color;
 }

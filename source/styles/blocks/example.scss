@@ -4,13 +4,13 @@
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient($bg-basic-light 618px, $bg-secondary-grey 618px);
-    border-top: 1px solid #e6e6e6;
+    border-top: 1px solid $light-grey-color;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 620px;
-    // position: relative;
     background-image: linear-gradient($bg-basic-light 156px, $bg-secondary-grey 156px);
+    border-top: none;
   }
 }
 
@@ -34,37 +34,27 @@
 }
 
 .example__title {
-  padding-top: 25px;
   margin: 0;
   margin-bottom: 40px;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding-top: 44px;
     margin-bottom: 60px;
+    padding-top: 44px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 20px;
     margin-bottom: 146px;
+    padding-top: 20px;
   }
 }
 
-// .example__title::before {
-//   @media (min-width: $tablet-width) {
-//     content: "";
-//     position: absolute;
-//     top: -3px;
-//     width: 100vw;
-//     border: 1px solid $light-grey-color;
-//   }
-// }
-
 .example__description {
   @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,12 +78,10 @@
 .example__list {
   display: flex;
   width: 100%;
-  padding: 0;
   justify-content: space-between;
-  //text-align: center;
-  list-style: none;
   margin: 0;
-  // margin-top: 20px;
+  padding: 0;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     justify-content: start;
@@ -119,45 +107,43 @@
 }
 
 .example__item-title {
-  font-family: $secondary-font;
-  font-size: 24px;
   margin-top: 15px;
   margin-bottom: 8px;
+  font-family: $secondary-font;
+  font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
   color: $dark-color;
 
   @media (min-width: $tablet-width) {
+    margin-top: 14px;
     font-size: 30px;
     line-height: 37px;
-    margin-top: 14px;
   }
 }
 
 .example__item-name {
+  z-index: 2;
+  width: min-content;
+  margin-top: -2px;
+  padding-left: 16px;
+  padding-right: 16px;
   font-size: 12px;
   line-height: 100%;
   font-weight: 400;
   box-sizing: border-box;
-  z-index: 2;
   text-align: center;
   background-color: $bg-secondary-grey;
-  width: min-content;
-  //max-width: calc(100% - 20px);
-  margin-top: -2px;
-  // margin-bottom: 34px;
-  padding-left: 16px;
-  padding-right: 16px;
 
   @media (min-width: $tablet-width) {
-    background-color: $bg-basic-light;
-    font-size: 14px;
-    line-height: 14px;
     width: auto;
     margin-top: 2px;
     padding-left: 2px;
     padding-right: 2px;
+    background-color: $bg-basic-light;
+    font-size: 14px;
+    line-height: 14px;
   }
 
   @media (min-width: $desktop-width) {
@@ -175,9 +161,9 @@
     flex-direction: column;
     align-items: end;
     gap: 9px;
-    text-align: right;
     width: 250px;
     margin-top: 11px;
+    text-align: right;
   }
 
   @media (min-width: $desktop-width) {
