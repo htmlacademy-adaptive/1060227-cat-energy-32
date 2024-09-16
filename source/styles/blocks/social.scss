@@ -26,6 +26,10 @@
   width: 280px;
   height: 1px;
   background-color: $additional-grey-color;
+
+  @media (min-width: $tablet-width) {
+    content: none;
+  }
 }
 
 .social__link {
