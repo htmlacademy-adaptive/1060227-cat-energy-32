@@ -72,13 +72,27 @@
   min-height: 290px;
   margin-top: 54px;
   background-color: $basic-green-opacity;
-  background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/cat-catalog-mobile@1x.jpg");
+  background-image:
+    linear-gradient($basic-green-opacity, $basic-green-opacity),
+    image-set(
+      url("../../images/cat-catalog-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/cat-catalog-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/cat-catalog-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/cat-catalog-mobile@2x.jpg") type("image/jpeg") 2x
+    );
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     min-height: 200px;
     margin-top: 69px;
-    background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/cat-catalog-tablet@1x.jpg");
+    background-image:
+      linear-gradient($basic-green-opacity, $basic-green-opacity),
+      image-set(
+        url("../../images/cat-catalog-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/cat-catalog-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/cat-catalog-tablet@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/cat-catalog-tablet@2x.jpg") type("image/jpeg") 2x,
+      );
     background-size: cover;
     background-position: 50%;
   }
@@ -86,7 +100,14 @@
   @media (min-width: $desktop-width) {
     min-height: 288px;
     margin-top: 0;
-    background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/cat-catalog-desktop@1x.jpg");
+    background-image:
+      linear-gradient($basic-green-opacity, $basic-green-opacity),
+      image-set(
+        url("../../images/cat-catalog-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/cat-catalog-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/cat-catalog-desktop@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/cat-catalog-desktop@2x.jpg") type("image/jpeg") 2x,
+      );
     background-size: cover;
     background-position: 50%;
   }

@@ -2,6 +2,7 @@
   position: relative;
   font-family: $secondary-font;
   color: $basic-light-color;
+  // margin-top: 205px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -16,7 +17,15 @@
 
 .hero-block__title-wrapper {
   min-height: 302px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/background-cat-index-mobile@1x.jpg"), linear-gradient(90deg, #545359, #414046);
+  background-image:
+    linear-gradient($basic-green-opacity, $basic-green-opacity),
+    image-set(
+      url("../../images/background-cat-index-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/background-cat-index-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/background-cat-index-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/background-cat-index-mobile@2x.jpg") type("image/jpeg") 2x
+    ),
+    linear-gradient(90deg, $bg-gradient-grey-first, $bg-gradient-grey-second);
   background-repeat: no-repeat;
   background-size: auto 302px, 320px 302px, auto 302px;
   background-position: top;
