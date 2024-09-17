@@ -54,7 +54,8 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    gap: 94px;
+    justify-content: space-between;
+    // gap: 92px;
     width: 704px;
     padding-top: 0;
   }

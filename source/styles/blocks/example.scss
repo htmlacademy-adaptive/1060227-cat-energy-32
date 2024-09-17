@@ -126,8 +126,8 @@
 .example__item-name {
   z-index: 2;
   width: min-content;
-  margin-top: -2px;
-  padding-left: 16px;
+  margin-top: -1px;
+  padding-left: 15px;
   padding-right: 16px;
   font-size: 12px;
   line-height: 100%;
@@ -139,8 +139,8 @@
   @media (min-width: $tablet-width) {
     width: auto;
     margin-top: 2px;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
     background-color: $bg-basic-light;
     font-size: 14px;
     line-height: 14px;
@@ -189,7 +189,11 @@
 }
 
 .example__info-cost-name {
-  margin-left: -4px;
+  margin-left: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 1px;
+  }
 }
 
 .example__info-cost-price {
