@@ -17,21 +17,23 @@
 <body class="page__body page__body-background">
   <header class="main-header main-header--index">
     <div class="main-header__wrapper">
-      <a class="main-header__logo logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-          <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи.">
-        </picture>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-text.svg" width="118" height="21" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/logo-text.svg" width="101" height="18" type="image/svg+xml">
-          <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Надпись Кэт Энерджи.">
-        </picture>
-      </a>
-      <nav class="main-header__nav main-nav main-nav--opened main-nav--nojs">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+      <div class="main-header__wrapper-logo-nav">
+        <a class="main-header__logo logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+            <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи.">
+          </picture>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/logo-text.svg" width="118" height="21" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/logo-text.svg" width="101" height="18" type="image/svg+xml">
+            <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Надпись Кэт Энерджи.">
+          </picture>
+        </a>
+        <button class="main-header__toggle main-header__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span>
         </button>
+      </div>
+      <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list main-nav__list--index">
             <li class="main-nav__list-item main-nav__list-item--current">
