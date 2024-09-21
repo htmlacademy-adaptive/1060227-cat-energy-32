@@ -49,6 +49,7 @@
   margin: 0 auto;
   padding-top: 14px;
   padding-bottom: 9px;
+  border-bottom: 1px solid $bg-secondary-grey;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -56,6 +57,7 @@
     width: 704px;
     margin: 0 auto;
     padding-top: 0;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {

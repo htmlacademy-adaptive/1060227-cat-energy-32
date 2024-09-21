@@ -16,6 +16,7 @@
 }
 
 .catalog-container__title {
+  max-width: 400px;
   margin: 28px auto 41px;
   padding-left: 20px;
   padding-right: 20px;
@@ -26,8 +27,10 @@
   color: $dark-color;
 
   @media (min-width: $tablet-width) {
-    margin-top: 52px;
-    margin-bottom: 86px;
+    max-width: 600px;
+    margin: 52px 0 86px;
+    padding-left: 0;
+    padding-right: 0;
     font-size: 60px;
     line-height: 60px;
   }
