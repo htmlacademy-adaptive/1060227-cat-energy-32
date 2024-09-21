@@ -8,7 +8,7 @@ navToggle.addEventListener('click', () => {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');
-    navToggle.classList.remove('main-header__toggle')
+    navToggle.classList.remove('main-header__toggle');
     navToggle.classList.add('main-header__toggle--close');
   } else {
     navMain.classList.add('main-nav--closed');
