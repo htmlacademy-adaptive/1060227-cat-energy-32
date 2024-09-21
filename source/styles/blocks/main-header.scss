@@ -1,5 +1,4 @@
 .main-header {
-  // position: relative;
   min-height: 65px;
   color: $dark-color;
   background-color: $bg-basic-light;
@@ -47,8 +46,6 @@
 .main-header__wrapper {
   display: flex;
   flex-direction: column;
-  // gap: 65px;
-  // width: 279px;
   margin: 0 auto;
   padding-top: 14px;
   padding-bottom: 9px;

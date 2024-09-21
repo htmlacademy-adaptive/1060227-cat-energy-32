@@ -1,6 +1,5 @@
 .main-nav {
   position: relative;
-  // width: auto;
   background-color: none;
 }
 
@@ -37,10 +36,6 @@
 }
 
 .main-nav__list {
-  // position: absolute;
-  // z-index: 100;
-  // top: 64px;
-  // left: 0;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -52,7 +47,6 @@
     position: static;
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
     gap: 33px;
     width: 436px;
     padding-top: 40px;
