@@ -62,7 +62,7 @@
   <main class="main-container catalog-container">
     <div class="catalog-container__wrapper">
       <!-- <h1 class="catalog-container__title">Каталог продукции</h1> -->
-      <section class="catalog container">
+      <section class="catalog catalog-container__wrapper-inner">
         <h1 class="catalog-container__title">Каталог продукции</h1>
         <div class="catalog__wrapper">
           <h2 class="visually-hidden">Основные товары</h2>
@@ -104,10 +104,10 @@
               <div class="product-card__wrapper">
                 <a class="product-card__link-image" href="#">
                   <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="images/product-2-desktop@1x.webp 1x, images/product-2-desktop@2x.webp 2x" width="169" height="210">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="images/product-2-desktop@1x.webp 1x, images/product-2-desktop@2x.webp 2x" width="172" height="196">
                     <source type="image/webp" media="(min-width: 768px)" srcset="images/product-2-tablet@1x.webp 1x, images/product-2-tablet@2x.webp 2x" width="168" height="206">
                     <source type="image/webp" srcset="images/product-2-mobile@1x.webp 1x, images/product-2-mobile@2x.webp 2x" width="84" height="100">
-                    <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/product-2-desktop@1x.png 1x, images/product-2-desktop@2x.png 2x">
+                    <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/product-2-desktop@1x.png 1x, images/product-2-desktop@2x.png 2x">
                     <source width="168" height="206" type="image/png" media="(min-width: 768px)" srcset="images/product-2-tablet@1x.png 1x, images/product-2-tablet@2x.png 2x">
                     <img class="product-card__image" src="images/product-2-mobile@1x.png" srcset="images/product-2-mobile@2x.png 2x" width="84" height="100" alt="Изображение товара">
                   </picture>
@@ -172,10 +172,10 @@
               <div class="product-card__wrapper">
                 <a class="product-card__link-image" href="#">
                   <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="images/product-4-desktop@1x.webp 1x, images/product-4-desktop@2x.webp 2x" width="169" height="210">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="images/product-4-desktop@1x.webp 1x, images/product-4-desktop@2x.webp 2x" width="172" height="196">
                     <source type="image/webp" media="(min-width: 768px)" srcset="images/product-4-tablet@1x.webp 1x, images/product-4-tablet@2x.webp 2x" width="168" height="200">
                     <source type="image/webp" srcset="images/product-4-mobile@1x.webp 1x, images/product-4-mobile@2x.webp 2x" width="84" height="100">
-                    <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/product-4-desktop@1x.png 1x, images/product-4-desktop@2x.png 2x">
+                    <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/product-4-desktop@1x.png 1x, images/product-4-desktop@2x.png 2x">
                     <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="images/product-4-tablet@1x.png 1x, images/product-4-tablet@2x.png 2x">
                     <img class="product-card__image" src="images/product-4-mobile@1x.png" srcset="images/product-4-mobile@2x.png 2x" width="84" height="100" alt="Изображение товара">
                   </picture>
@@ -240,10 +240,10 @@
               <div class="product-card__wrapper">
                 <a class="product-card__link-image" href="#">
                   <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="images/product-6-desktop@1x.webp 1x, images/product-6-desktop@2x.webp 2x" width="169" height="210">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="images/product-6-desktop@1x.webp 1x, images/product-6-desktop@2x.webp 2x" width="172" height="196">
                     <source type="image/webp" media="(min-width: 768px)" srcset="images/product-6-tablet@1x.webp 1x, images/product-6-tablet@2x.webp 2x" width="168" height="200">
                     <source type="image/webp" srcset="images/product-6-mobile@1x.webp 1x, images/product-6-mobile@2x.webp 2x" width="84" height="100">
-                    <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/product-6-desktop@1x.png 1x, images/product-6-desktop@2x.png 2x">
+                    <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/product-6-desktop@1x.png 1x, images/product-6-desktop@2x.png 2x">
                     <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="images/product-6-tablet@1x.png 1x, images/product-6-tablet@2x.png 2x">
                     <img class="product-card__image" src="images/product-6-mobile@1x.png" srcset="images/product-6-mobile@2x.png 2x" width="84" height="100" alt="Изображение товара">
                   </picture>
@@ -396,35 +396,35 @@
       <div class="contacts__map-container map" id="map">
       </div>
     </section>
-
-    <footer class="main-footer">
-      <div class="main-footer__wrapper container">
-        <a class="main-footer__logo logo" href="index.html">
-          <img class="main-footer__logo-text" src="images/logo-text.svg" width="128" height="24" alt="Надпись Кэт Энерджи.">
-        </a>
-        <div class="main-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Ютуб</span></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Телеграм</span></a>
-            </li>
-          </ul>
-        </div>
-        <div class="main-footer__academy-logo">
-          <a class="main-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="main-footer__academy-text">HTML Academy</span>
-            <span class="visually-hidden">Сайт HTML Academy</span>
-            <svg class="main-footer__academy-icon" width="27" height="34"></svg>
-          </a>
-        </div>
-      </div>
-    </footer>
   </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper container">
+      <a class="main-footer__logo logo" href="index.html">
+        <img class="main-footer__logo-text" src="images/logo-text.svg" width="128" height="24" alt="Надпись Кэт Энерджи.">
+      </a>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Ютуб</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Телеграм</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__academy-logo">
+        <a class="main-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="main-footer__academy-text">HTML Academy</span>
+          <span class="visually-hidden">Сайт HTML Academy</span>
+          <svg class="main-footer__academy-icon" width="27" height="34"></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
 
   <script src="scripts/menu.js" defer></script>
   <script src="scripts/map.js" defer></script>
