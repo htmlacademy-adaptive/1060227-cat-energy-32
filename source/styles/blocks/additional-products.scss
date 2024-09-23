@@ -26,7 +26,7 @@
   z-index: 1;
   max-width: fit-content;
   margin-top: 27px;
-  margin-bottom: 47px;
+  margin-bottom: 33px;
   padding-right: 40px;
   background-color: $bg-basic-light;
 
@@ -37,6 +37,14 @@
     width: 40px;
     height: 40px;
     background-color: $bg-basic-light;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      content: "";
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -70,7 +78,7 @@
 
 .additional-products__offer {
   min-height: 290px;
-  margin-top: 54px;
+  margin-top: 34px;
   background-color: $basic-green-opacity;
   background-image:
     linear-gradient($basic-green-opacity, $basic-green-opacity),

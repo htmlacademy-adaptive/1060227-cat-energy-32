@@ -16,7 +16,7 @@
 }
 
 .catalog-container__title {
-  max-width: 400px;
+  max-width: 280px;
   margin: 28px auto 41px;
   padding-left: 20px;
   padding-right: 20px;
@@ -37,20 +37,5 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 61px;
-  }
-}
-
-.catalog__list {
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 324px 324px;
-    gap: 60px;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: 245px 245px 245px 245px;
-    gap: 63px 80px;
   }
 }

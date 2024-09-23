@@ -26,6 +26,11 @@
     background-color: $special-green;
   }
 
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
   &--primary {
     width: 100%;
     color: $basic-light-color;
@@ -47,6 +52,11 @@
     &:active {
       color: $basic-dark-grey-color;
       background-color: $bg-special-grey;
+    }
+
+    &:disabled {
+      opacity: 0.3;
+      pointer-events: none;
     }
   }
 }

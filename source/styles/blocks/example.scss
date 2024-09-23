@@ -23,6 +23,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
     padding-bottom: 0;
   }
 }
@@ -132,7 +133,6 @@
   font-size: 12px;
   line-height: 100%;
   font-weight: 400;
-  box-sizing: border-box;
   text-align: center;
   background-color: $bg-secondary-grey;
 
@@ -203,8 +203,8 @@
 .example__slider {
   margin-top: 20px;
 
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 50px;
-  }
+  // @media (min-width: $desktop-width) {
+  //   position: absolute;
+  //   top: 50px;
+  // }
 }
