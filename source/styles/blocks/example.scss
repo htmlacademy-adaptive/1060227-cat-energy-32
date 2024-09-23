@@ -1,59 +1,205 @@
 .example {
+  min-height: 659px;
   background-color: $bg-secondary-grey;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient($bg-basic-light 618px, $bg-secondary-grey 618px);
+    border-top: 1px solid $light-grey-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 620px;
+    background-image: linear-gradient($bg-basic-light 156px, $bg-secondary-grey 156px);
+    border-top: none;
+  }
 }
 
-// .example__wrapper {
-//   width: 280px;
-//   box-sizing: border-box;
-// }
+.example__wrapper {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 177px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+  }
+}
+
+.example__total-info {
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
+}
 
 .example__title {
+  margin: 0;
+  margin-bottom: 40px;
   padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-bottom: 60px;
+    padding-top: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+    padding-top: 20px;
+  }
+}
+
+.example__description {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 433px;
+    margin-bottom: 70px;
+  }
+}
+
+.example__info {
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .example__list {
   display: flex;
   width: 100%;
-  padding: 0;
   justify-content: space-between;
-  //text-align: center;
+  margin: 0;
+  padding: 0;
   list-style: none;
-  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+    gap: 43px;
+  }
 }
 
 .example__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 124px;
+  height: 56px;
   border: 1px solid $special-grey-color;
   border-radius: 3px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 71px;
+  }
 }
 
 .example__item-title {
-  font-family: $secondary-font;
-  font-size: 24px;
   margin-top: 15px;
   margin-bottom: 8px;
+  font-family: $secondary-font;
+  font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
   color: $dark-color;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 14px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__item-name {
+  z-index: 2;
+  width: min-content;
+  margin-top: -1px;
+  padding-left: 15px;
+  padding-right: 16px;
   font-size: 12px;
   line-height: 100%;
   font-weight: 400;
-  margin: 0;
+  text-align: center;
+  background-color: $bg-secondary-grey;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: $bg-basic-light;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $bg-secondary-grey;
+  }
 }
 
-.example__cost {
+.example__info-cost {
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: end;
+    gap: 9px;
+    width: 250px;
+    margin-top: 11px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 174px 100px;
+    gap: 53px;
+    margin-left: 40px;
+    margin-top: 60px;
+  }
+}
+
+.example__info-cost-name,
+.example__info-cost-price {
   font-family: $secondary-font;
   line-height: 20px;
   text-transform: uppercase;
   color: $dark-color;
-  margin-top: 20px;
-  margin-bottom: 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.example__info-cost-name {
+  margin-left: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 1px;
+  }
+}
+
+.example__info-cost-price {
+  margin-left: 5px;
+}
+
+.example__slider {
+  margin-top: 20px;
 }

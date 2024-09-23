@@ -7,18 +7,28 @@ $social-link-color: #666666;
 $light-grey-color: #e6e6e6;
 $additional-grey-color: #d9d9d9;
 $special-grey-color: #cdcdcd;
+$grey-color: #d3d3d3;
 
 $basic-light-color: #ffffff;
+$basic-light-opacity-color: rgba(255, 255, 255, 0.3);
 
 $basic-green: #68b738;
+$basic-green-opacity: rgba(104, 183, 56, 0.85);
+$special-green: #5eaa2f;
 
 $bg-basic-light: #ffffff;
 $bg-primary-grey: #f2f2f2;
 $bg-secondary-grey: #eaeaea;
+$bg-special-grey: #ebebeb;
+$bg-gradient-grey-first: #545359;
+$bg-gradient-grey-second: #414046;
+$bg-gradient-grey-third: #414045;
+$bg-gradient-grey-fourth: #434248;
 
-$primary-font: "Lato", sans-serif;
-$secondary-font: "Oswald", sans-serif;
+$primary-font: "Lato", "Arial", sans-serif;
+$secondary-font: "Oswald", "Arial", sans-serif;
 
+$mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1440px;
 $mobile-width-only: 767px;

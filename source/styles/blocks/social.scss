@@ -1,6 +1,35 @@
 .social__list {
-  list-style: none;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 0;
   padding: 0;
+  padding-top: 37px;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 16px;
+    padding-left: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+  }
+}
+
+.social__list::after {
+  content: "";
+  position: absolute;
+  top: 78px;
+  left: -76px;
+  width: 280px;
+  height: 1px;
+  background-color: $additional-grey-color;
+
+  @media (min-width: $tablet-width) {
+    content: none;
+  }
 }
 
 .social__link {

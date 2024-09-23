@@ -1,12 +1,6 @@
-.catalog-container__title {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
-  color: $dark-color;
-}
-
 .catalog__list {
+  margin: 0;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 324px 324px;

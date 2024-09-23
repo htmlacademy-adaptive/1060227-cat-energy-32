@@ -6,14 +6,48 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 48px;
+    padding-bottom: 66px;
+  }
+}
+
+.main-footer__logo {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 19px;
+  }
+}
+
+.main-footer__logo::after {
+  content: "";
+  position: absolute;
+  top: 43px;
+  left: -76px;
+  width: 280px;
+  height: 1px;
+  background-color: $additional-grey-color;
+
+  @media (min-width: $tablet-width) {
+    content: none;
   }
 }
 
 .main-footer__academy-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 140px;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
@@ -31,6 +65,22 @@
   &:active .main-footer__academy-icon {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+  }
+}
+
+.main-footer__academy-text {
+  width: 115px;
+}
+
+.main-footer__academy-logo {
+  margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
 }
 
 .main-footer__academy-icon {
@@ -38,7 +88,6 @@
   width: 27px;
   height: 34px;
   mask-repeat: no-repeat;
-  mask-position: center;
   mask-image: url("../../icons/stack.svg#html-academy-logo");
   mask-size: 27px 34px;
   background-color: $social-link-color;
