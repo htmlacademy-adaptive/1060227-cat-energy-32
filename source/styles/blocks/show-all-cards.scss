@@ -17,52 +17,6 @@
   }
 }
 
-// .show-all-cards__button-plus {
-//   position: relative;
-//   width: 30px;
-//   height: 30px;
-//   margin-top: 20px;
-//   box-sizing: border-box;
-//   background-color: transparent;
-//   border: none;
-
-//   @media (min-width: $tablet-width) {
-//     width: 60px;
-//     height: 60px;
-//     margin-top: 66px;
-//   }
-
-
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     top: 15px;
-//     left: 0;
-//     width: 30px;
-//     height: 2px;
-//     background-color: $grey-color;
-
-//     @media (min-width: $tablet-width) {
-//       width: 60px;
-//     }
-//   }
-
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     top: 15px;
-//     left: 0;
-//     width: 30px;
-//     height: 2px;
-//     background-color: $grey-color;
-//     transform: rotate(90deg);
-
-//     @media (min-width: $tablet-width) {
-//       width: 60px;
-//     }
-//   }
-// }
-
 .show-all-cards__title {
   position: relative;
   margin: 73px 0 8px;
