@@ -1,0 +1,115 @@
+.show-all-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3px;
+  padding-top: 0;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 78px;
+    background-image: none;
+    border: 2px solid $bg-primary-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 77px;
+  }
+}
+
+.show-all-cards__title {
+  position: relative;
+  margin: 73px 0 8px;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $dark-primary-color;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -39px;
+    left: 86px;
+    width: 30px;
+    height: 2px;
+    background-color: $grey-color;
+
+    @media (min-width: $tablet-width) {
+      top: -80px;
+      left: 46px;
+      width: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -70px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -39px;
+    left: 86px;
+    width: 30px;
+    height: 2px;
+    background-color: $grey-color;
+    transform: rotate(90deg);
+
+    @media (min-width: $tablet-width) {
+      top: -80px;
+      left: 46px;
+      width: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -70px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 150px;
+    margin-top: 161px;
+    margin-bottom: 22px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 149px;
+    margin-bottom: 27px;
+  }
+}
+
+.show-all-cards__description {
+  margin: 0 0 21px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    max-width: 170px;
+    margin-bottom: 82px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
+  }
+}
+
+.show-all-cards__button {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 169px;
+  }
+}

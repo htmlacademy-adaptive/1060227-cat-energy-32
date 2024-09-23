@@ -1,0 +1,22 @@
+.container {
+  width: 320px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}

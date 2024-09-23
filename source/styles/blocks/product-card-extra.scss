@@ -1,0 +1,135 @@
+.product-card-extra {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    gap: 0;
+    border-left: 1px solid $special-grey-color;
+    border-right: 1px solid $special-grey-color;
+    border-top: 1px solid $special-grey-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.product-card-extra__item {
+  padding-top: 13px;
+  padding-bottom: 19px;
+  border-top: 1px solid $special-grey-color;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 316px 316px;
+    align-items: center;
+    padding: 26px 37px 28px;
+    border-bottom: 1px solid $special-grey-color;
+    border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 325px) 244px;
+    grid-template-rows: 40px;
+    align-items: center;
+    padding: 15px 0;
+  }
+}
+
+.product-card-extra__item:last-child {
+  border-bottom: 1px solid $special-grey-color;
+}
+
+.product-card-extra__link-title {
+  text-decoration: none;
+}
+
+.product-card-extra__title {
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $dark-secondary-color;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.product-card-extra__list {
+  margin: 0;
+  line-height: 14px;
+}
+
+.product-card-extra__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    margin-top: 6px;
+    margin-bottom: 0;
+  }
+}
+
+.product-card-extra__button {
+  grid-column: -3 / 3;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3/4;
+    margin-top: 0;
+  }
+}
+
+.product-card-extra__name {
+  @media (min-width: $tablet-width) {
+    width: 135px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.product-card-extra__value {
+  @media (min-width: $tablet-width) {
+    width: 91px;
+    margin: 0;
+    margin-right: 3px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 44px;
+    margin-right: 38px;
+    text-align: left;
+  }
+}
