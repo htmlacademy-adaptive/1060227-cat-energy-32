@@ -15,34 +15,6 @@
   }
 }
 
-.main-header--index {
-  @media (min-width: $desktop-width) {
-    &::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      width: 50%;
-      height: 748px;
-      top: -55px;
-      left: 50%;
-      right: 0;
-      background-color: $basic-green-opacity;
-      background-image:
-        linear-gradient($basic-green-opacity, $basic-green-opacity),
-        image-set(
-          url("../../images/background-cat-index-desktop@1x.webp") type("image/webp") 1x,
-          url("../../images/background-cat-index-desktop@2x.webp") type("image/webp") 2x,
-          url("../../images/background-cat-index-desktop@1x.jpg") type("image/jpeg") 1x,
-          url("../../images/background-cat-index-desktop@2x.jpg") type("image/jpeg") 2x
-        ),
-        linear-gradient(90deg, $bg-gradient-grey-third, $bg-gradient-grey-fourth);
-      background-position: 100% 0, bottom left 0, 100% 0;
-      background-repeat: no-repeat;
-      background-size: cover, 1041px 694px, cover;
-    }
-  }
-}
-
 .main-header__wrapper {
   display: flex;
   flex-direction: column;
