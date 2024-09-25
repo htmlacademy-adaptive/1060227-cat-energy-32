@@ -36,7 +36,7 @@
     grid-template-columns: repeat(2, 325px) 244px;
     grid-template-rows: 40px;
     align-items: center;
-    padding: 15px 0;
+    padding: 15px 0 16px;
   }
 }
 
@@ -82,6 +82,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
