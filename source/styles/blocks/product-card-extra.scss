@@ -82,6 +82,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
