@@ -48,7 +48,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 33px;
-    width: 436px;
+    width: 440px;
     padding-top: 40px;
   }
 
@@ -130,17 +130,5 @@
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
-  }
-}
-
-.main-header--index .main-nav__link {
-  @media (min-width: $desktop-width) {
-    color: $basic-light-color;
-  }
-}
-
-.main-header--index .main-nav__list-item--current::after {
-  @media (min-width: $desktop-width) {
-    background-color: $basic-light-color;
   }
 }
